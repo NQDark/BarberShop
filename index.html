@@ -5,29 +5,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
     <title>BarberShop</title>
 </head>
 
 <body>
     <header>
         <div class="header">
-            <div class="header__public">
-            </div>
-            <div class="header_menu">
-                <div class="header_navigation">
+            <div class="header__container">
+                <div class="header__public-container">
+                    <div class="header__public">
+                        <svg class="header__public-logo" width="69px" height="56px">
+                            <use class="header__public-logo-item" href="./img/sprite.svg#Logo">
+                            </use>
+                        </svg>
+                        <div class="header__public-navigation">
+                            <div class="header__public-navigation-rectangle"></div>
+                            <a class="header__public-navigation-item" href="">Instagram</a>
+                            <a class="header__public-navigation-item" href="">Youtube</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="header_contacts">
+                <div class="header__list">
+                    <div class="header__list-menu">
+                        <ul class="header__list-menu-navigation">
+                            <li class="header__list-menu-navigation-item">О нас</li>
+                            <li class="header__list-menu-navigation-item">
+                                <a href="#price">Услуги и цены</a>
+                            </li>
+                            <li class="header__list-menu-navigation-item">Мастера</li>
+                            <li class="header__list-menu-navigation-item">Контакты</li>
+                        </ul>
+                        <div class="header__list-menu-contacts">
+                            <a href="" class="header__list-menu-contacts-link">+38 044 111 11 11</a>
+                            <button class="header__list-menu-contacts-button" type="button">онлайн-запись</button>
+                        </div>
+                    </div>
+                    <div class="header__list-name">
+                        <div class="header__list-name-first">
+                            <div class="header__list-name-rectangle"></div>
+                            <p>A hair salon for men in Kyiv</p>
+                        </div>
+                        <h1 class="header__list-name-second">BarberShop</h1>
+                        <p class="header__list-name-third">We are experts in trendy men's haircuts. <br>
+                            We work quickly, carefully, and tastefully.</p>
+                    </div>
+                    <div class="header__menu-container">
+                        <div class="header__menu-container-big"></div>
+                        <div class="header__menu-container-small"></div>
+                        <div class="header__menu-container-small"></div>
+                    </div>
                 </div>
             </div>
         </div>
-
+       
+        <div class="header__slid-navigation">
+            <div class="header__slid-navigation-befor">Назад</div>
+            <div class="header__slid-navigation-after">Вперед</div>
+        </div>
     </header>
     <main>
         <section class="represent">
-
+            <div class="container">
+                <div class="represent__container">
+                    <div class="represent__container-image">
+                        <img class="represent__container-image-item" src="./img/represent/img1.jpg" alt="">
+                        <img class="represent__container-image-item" src="./img/represent/img2.jpg" alt="">
+                    </div>
+                    <div class="represent__container-list">
+                        <div class="represent__container-list-item1">
+                            <div class="represent__container-list-rectangle"></div>
+                            <p>О НАС</p>
+                        </div>
+                        <h2 class="represent__container-list-title">Лучший Барбершоп
+                            твоего города</h2>
+                        <p class="represent__container-list-item2">Если ты хочешь добавить в свой образ больше
+                            уверенности – тебе точно к нам.</p>
+                        <p class="represent__container-list-item3">Мы команда, которая никогда не останавливается на
+                            достигнутом
+                            и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+                            то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
+                            волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+                        <button class="represent__container-list-button" type="button">онлайн-запись</button>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="price">
-
+        <section id="price" class="price">
+            <div class="price__backgraund">
+                <div class="container">
+                    <div class="price__container">
+                        <div class="price__container-item">
+                            <div class="price__container-item-rectangle"></div>
+                            <p>Проведи время в компании лучших мастеров</p>
+                        </div>
+                        <h2 class="price__container-title">Услуги и цены</h2>
+                        <div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <button class="price__container-button" type="button">онлайн-запись</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="benefits">
 

@@ -1,0 +1,57 @@
+.price {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image:  url(../../img/price/img.jpg);
+    // background-size: 100% 100%;
+    // background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(247, 83, 7, 0.4)), color-stop(50%, rgba(47, 48, 58, 0.4))), url(../../img/price/img.jpg);
+    background-position: center;
+    background-size: cover;
+    // filter: brightness(50%);
+}
+
+.price__container {
+    padding: 130px 0;
+}
+
+.price__container-item {
+    display: flex;
+    align-items: center;
+    font: 600 11px 'Open Sans', normal;
+    letter-spacing: 0.1em;
+    padding-bottom: 20px;
+    color: getColor("forth-text");
+}
+
+.price__container-item-rectangle {
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background: getColor("forth-text");
+}
+
+.price__container-title {
+    font: 700 42px 'Raleway', normal;
+    letter-spacing: 0.05em;
+    padding-bottom: 20px;
+    color: getColor("primary-fon");
+}
+
+
+
+.price__container-button {
+    font: 600 12px 'Open Sans', normal;
+    letter-spacing: 0.09em;
+    width: 160px;
+    height: 40px;
+    padding-bottom: 400px;
+    color: getColor("primary-fon");
+    border: 1px solid getColor("accent");
+    border-radius: 25px;
+    background: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-color: getColor("accent");
+    }
+}

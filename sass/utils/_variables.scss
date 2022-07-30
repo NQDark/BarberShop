@@ -1,0 +1,18 @@
+$colors: (
+    "primary-text": #303030,
+    "secondary-text": #555555,
+    "third-text":#9DA4BD,
+    "forth-text": rgba(157, 164, 189, 0.6),
+    "primary-fon": #ffffff,
+    "secondary-fon":#F7F7F7,
+    "accent": #FF6C00,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1280px;

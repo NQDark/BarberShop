@@ -1,0 +1,49 @@
+body {
+    font: 400 18px 'Open Sans', normal;
+    margin: 0;
+    line-height: 1.5;
+    color: getColor("secondary-text");
+    background-color: getColor("primary-fon");
+}
+
+h1 {
+    font: 700 72px 'Raleway', normal;    
+    letter-spacing: 0.05em;  
+    margin: 0px;  
+    color: getColor("primary-fon");
+}
+
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+    @media screen and (max-width: $desktop-width) {
+        width: 768px;
+      }
+
+    @media screen and (max-width: $tablet-width) {
+        width: 480px;
+      }
+}
