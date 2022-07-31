@@ -371,8 +371,70 @@
             </div>
         </section>
     </main>
-    <footer id="footer">
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer__container">
 
+                <form class="footer-form" autocomplete="off">
+                    <h2 class="footer-form__title">Онлайн-запись</h2>
+                    <div class="footer-form__contacts">
+                        <div class="footer-form__contacts-icon">
+                            <input id="input-name" class="footer-form__contacts-input" name="name" type="text"
+                                placeholder="ИМЯ*">
+                        </div>
+                        <div class="footer-form__contacts-icon">
+                            <input id="input-telephone" class="footer-form__contacts-input" name="telephone" type="tel"
+                                placeholder="ТЕЛЕФОН*">
+                        </div>
+                    </div>
+                    <div class="footer-form__comments">
+                        <textarea id="input-comments" class="footer-form__comments-textarea" name="comments" rows="4"
+                            placeholder="СООБЩЕНИЕ"></textarea>
+                    </div>
+                    <button type="submit" class="footer-form__button">ОТПРАВИТЬ</button>
+                </form>
+
+                <!-- <div class="footer_container-contacts">
+                    <img class="footer__container-fon" src="./img/footer/footer_img_desktop.png" alt="fon">
+
+                </div>
+            </div>
+            <div class="footer__public"> -->
+                <div class="footer__container-contacts">
+                    <p class="footer__container-contacts-header">Контакты</p>
+                    <ul class="footer__container-contacts-list">
+                      <li class="footer__container-contacts-item">
+                        <svg class="footer__container-contacts-icon footer__container-contacts-icon--location" width="32px" height="32px">
+                          <use class="" href="./img/sprite.svg#location"></use>
+                        </svg>
+                        <address class="footer__container-contacts-link">ул. Васильковая, 7А<br>Киев, 08132</address>
+                      </li>
+                      <li class="footer__container-contacts-item">
+                        <a href="tel:+380441111111" class="footer__container-contacts-link">
+                          <svg class="footer__container-contacts-icon  footer__container-contacts-icon--phone" width="32px" height="32px">
+                            <use href="./img/sprite.svg#phone"></use>
+                          </svg>
+                          +38 044 111 11 11
+                        </a>
+                      </li>
+                      <li class="footer__container-contacts-item">
+                        <a href="barbershop@email.com" class="footer__container-contacts-link">
+                          <svg class="footer__container-contacts-icon footer__container-contacts-icon--email" width="32px" height="24px">
+                            <use href="./img/sprite.svg#mail"></use>
+                          </svg>
+                          barbershop@email.com
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__container-line"></div>
+              <div class="container">
+                <p class="footer__public">Copyright 2020</p>
+
+            </div>
+        </div>
     </footer>
 
 </body>
