@@ -1,21 +1,47 @@
 .represent__container {
     display: flex;
-    padding: 130px 0;
+    padding: 130px 15px;
+
+    @media screen and (max-width: $desktop-width) {
+        padding: 100px 5px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        padding: 0;
+    }
 }
 
 .represent__container-image {
     display: flex;
     margin-right: 64px;
+
+    @media screen and (max-width: $desktop-width) {
+        display: block;
+        margin-right: 30px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        display: none;
+    }
 }
 
 .represent__container-image-item {
+
     &:first-child {
         margin-right: 30px;
     }
 }
 
 .represent__container-list {
-    padding-right: 66px;
+    padding-right: 55px;
+
+    @media screen and (max-width: $desktop-width) {
+        padding-right: 0;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        padding: 84px 16px;
+    }
 }
 
 .represent__container-list-item1 {
@@ -39,22 +65,38 @@
     letter-spacing: 0.05em;
     padding-bottom: 20px;
     color: getColor("primary-text");
+
+    @media screen and (max-width: $desktop-width) {
+        font-size: 28px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        padding-right: 30px;
+    }
 }
 
-.represent__container-list-item2 {
+.represent__container-list-big {
     font: 600 18px 'Open Sans', normal;
     letter-spacing: 0.02em;
     line-height: 1.8;
     padding-bottom: 20px;
     color: getColor("secondary-text");
+
+    @media screen and (max-width: $desktop-width) {
+        font-size: 16px;
+    }
 }
 
-.represent__container-list-item3 {
+.represent__container-list-small {
     font: 400 14px 'Open Sans', normal;
     letter-spacing: 0.02em;
     line-height: 1.8;
     padding-bottom: 40px;
     color: getColor("secondary-text");
+
+    @media screen and (max-width: $desktop-width) {
+        line-height: 1.7;
+    }
 }
 
 .represent__container-list-button {

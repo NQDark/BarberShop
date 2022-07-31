@@ -35,15 +35,24 @@ p {
     margin: 0px;
 }
 
+img {
+    display: block;
+}
+
+sup {
+    text-decoration: none;
+    list-style: none;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
 
     @media screen and (max-width: $desktop-width) {
-        width: 768px;
+        width: 700px;
       }
 
     @media screen and (max-width: $tablet-width) {
-        width: 480px;
+        width: 450px;
       }
 }

@@ -1,0 +1,106 @@
+.benefits__container {
+    display: flex;
+    align-items: flex-start;
+    padding: 121px 81px 130px 115px;
+
+    @media screen and (max-width: $desktop-width) {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        padding: 100px 39px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        padding: 84px 17px;
+        align-items: center;
+    }
+}
+
+.benefits__container-card {
+    display: flex;
+    margin-right: 130px;
+
+    @media screen and (max-width: $desktop-width) {
+        margin-right: 0;
+    }
+}
+
+.benefits__container-card-left {
+    margin-right: 30px;
+}
+
+.benefits__container-card-right {
+    margin-top: 35px;
+}
+
+.benefits__container-card-item {
+    width: 170px;
+    height: 133px;
+    background-color: getColor("secondary-fon");
+
+    &:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+.benefits__container-card-item-big {
+    font: 700 42px 'Open Sans', normal;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: getColor("primary-text");
+}
+
+.benefits__container-card-item-middle {
+    vertical-align: revert;
+    font: 600 16px 'Open Sans', normal;
+    color: getColor("accent");
+}
+
+.benefits__container-card-item-small {
+    font: 600 11px 'Open Sans', normal;
+    text-align: center;
+    padding: 0 20px;
+    color: getColor("primary-text");
+}
+
+.benefits__container-list {
+
+    @media screen and (max-width: $desktop-width) {
+        margin-bottom: 44px;
+        padding-right: 150px;
+    }
+    @media screen and (max-width: $tablet-width) {
+        padding-right: 0px;
+    }
+}
+
+.benefits__container-item {
+    display: flex;
+    align-items: center;
+    font: 600 11px 'Open Sans', normal;
+    letter-spacing: 0.1em;
+    padding-top: 9px;
+    padding-bottom: 20px;
+    color: getColor("primary-text");
+}
+
+.benefits__container-item-rectangle {
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background: getColor("primary-text");
+}
+
+.benefits__container-title {
+    font: 700 42px 'Raleway', normal;
+    letter-spacing: 0.05em;
+    padding-bottom: 20px;
+    color: getColor("primary-text");
+}
+
+.benefits__container-text {
+    font: 400 18px 'Open Sans', normal;
+    letter-spacing: 0.02em;
+    line-height: 1.8;
+    color: getColor("secondary-text");
+}
