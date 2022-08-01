@@ -52,13 +52,14 @@ sup {
     list-style: none;
 }
 
+footer {
+    margin: 0 auto;
+}
+
 ::placeholder {
-    display: flex;
-    flex-direction: column;
     font: 600 11px 'Open Sans', normal;
     letter-spacing: 0.1em;
-    color: getColor('primary-fon');
-    vertical-align: text-top;
+    color: getColor('forth-text');
 }
 
 .container {
