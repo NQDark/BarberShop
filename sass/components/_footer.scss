@@ -264,6 +264,7 @@
 }
 
 .footer__container-contacts-icon {
+    margin-right: 20px;
     stroke: getColor("third-text");
     fill: none;
 
@@ -278,6 +279,13 @@
 
         &:first-child {
           margin-right: 100px;
+        }
+    }
+
+    @media screen and (max-width: $tablet-width) {
+
+        &:first-child {
+          margin-right: 0;
         }
     }
 }

@@ -102,7 +102,7 @@
     background-size: cover;
 
     @media screen and (max-width: $desktop-width) {
-          background-image: url(../../img/header/Slider_hero_tablet3.png);
+        background-image: url(../../img/header/Slider_hero_tablet3.png);
     }
 
     @media screen and (max-width: $tablet-width) {
@@ -154,12 +154,11 @@
 }
 
 .header__list-menu-contacts {
-    align-items: center;
     display: flex;
+    align-items: center;
     padding: 40px 55px 40px 0;
 
     @media screen and (max-width: $desktop-width) {
-        display: flex;
         flex-direction: column-reverse;
         padding: 40px 39px 0 0;
     }
@@ -367,12 +366,12 @@
     right: 39px;
     fill: getColor("primary-fon");
     cursor: pointer;
-  
+
     @media screen and (max-width: $tablet-width) {
-      display: flex;
+        display: flex;
     }
-  
+
     &:hover {
-      fill: getColor("accent");
+        fill: getColor("accent");
     }
-  }
+}
