@@ -1,0 +1,124 @@
+.team {
+    background: getColor('secondary-fon');
+}
+
+.team__container {
+    padding: 130px 15px;
+
+    @media screen and (max-width: $desktop-width) {
+        padding: 100px 15px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        padding: 84px 15px;
+    }
+}
+
+.team__container-text-top {
+    display: flex;
+    align-items: center;
+    font: 600 11px 'Open Sans', normal;
+    letter-spacing: 0.1em;
+    padding-bottom: 20px;
+    color: getColor("primary-text");
+
+    @media screen and (max-width: $desktop-width) {
+        padding-left: 110px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        padding-left: 0;
+    }
+}
+
+.team__container-text-rectangle {
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background: getColor("primary-text");
+}
+
+.team__container-title {
+    font: 700 42px 'Raleway', normal;
+    letter-spacing: 0.05em;
+    padding-bottom: 44px;
+    color: getColor("primary-text");
+
+    @media screen and (max-width: $desktop-width) {
+        padding-left: 110px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        padding-left: 0;
+    }
+}
+
+.team__container-list {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $desktop-width) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.team__container-list-item {
+
+    @media screen and (max-width: $desktop-width) {
+        margin-bottom: 64px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.team__container-card {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.team__container-item {
+    margin-bottom: 8px;
+}
+
+.team__container-content {
+    margin-bottom: 30px;
+}
+
+.team__container-media-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+    background-color: getColor("primary-fon");
+    border-radius: 50%;
+    fill: getColor("primary-text");
+
+
+    &:hover {
+        background-color: getColor("accent");
+    }
+
+    &:hover .team__container-media {
+        fill: getColor("primary-fon");
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.team__container-media {
+    width: 20px;
+    height: 20px;
+
+
+    &:hover {
+        fill: getColor("primary-fon");
+    }
+}

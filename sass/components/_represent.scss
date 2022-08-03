@@ -1,0 +1,118 @@
+.represent__container {
+    display: flex;
+    padding: 130px 15px;
+
+    @media screen and (max-width: $desktop-width) {
+        padding: 100px 5px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        padding: 0;
+    }
+}
+
+.represent__container-image {
+    display: flex;
+    margin-right: 64px;
+
+    @media screen and (max-width: $desktop-width) {
+        display: block;
+        margin-right: 30px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        display: none;
+    }
+}
+
+.represent__container-image-item {
+
+    &:first-child {
+        margin-right: 30px;
+    }
+}
+
+.represent__container-list {
+    padding-right: 55px;
+
+    @media screen and (max-width: $desktop-width) {
+        padding-right: 0;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        padding: 84px 16px;
+    }
+}
+
+.represent__container-list-item1 {
+    display: flex;
+    align-items: center;
+    font: 600 11px 'Open Sans', normal;
+    letter-spacing: 0.1em;
+    padding-bottom: 20px;
+    color: getColor("primary-text");
+}
+
+.represent__container-list-rectangle {
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background: getColor("primary-text");
+}
+
+.represent__container-list-title {
+    font: 700 42px 'Raleway', normal;
+    letter-spacing: 0.05em;
+    padding-bottom: 20px;
+    color: getColor("primary-text");
+
+    @media screen and (max-width: $desktop-width) {
+        font-size: 28px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        padding-right: 30px;
+    }
+}
+
+.represent__container-list-big {
+    font: 600 18px 'Open Sans', normal;
+    letter-spacing: 0.02em;
+    line-height: 1.8;
+    padding-bottom: 20px;
+    color: getColor("secondary-text");
+
+    @media screen and (max-width: $desktop-width) {
+        font-size: 16px;
+    }
+}
+
+.represent__container-list-small {
+    font: 400 14px 'Open Sans', normal;
+    letter-spacing: 0.02em;
+    line-height: 1.8;
+    padding-bottom: 40px;
+    color: getColor("secondary-text");
+
+    @media screen and (max-width: $desktop-width) {
+        line-height: 1.7;
+    }
+}
+
+.represent__container-list-button {
+    font: 600 12px 'Open Sans', normal;
+    letter-spacing: 0.09em;
+    width: 160px;
+    height: 40px;
+    color: getColor("primary-text");
+    border: 1px solid getColor("accent");
+    border-radius: 25px;
+    background: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        color: getColor("primary-fon");
+        background-color: getColor("accent");
+    }
+}
